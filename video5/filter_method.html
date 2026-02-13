@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter method in array</title>
+</head>
+<body>
+    <script>
+        // Filter method in array
+        // Creates a new array of elements that give true for a condition/filter.
+        // Eg:all even elements
+        // let newArr = arr.filter((val)=>{
+        //      return val%2 === 0;
+        // })
+
+        let arr = [34,64,43,64,32];
+        let newEvenArr = arr.filter((val)=>{
+            return val%2 === 0;
+        });
+        console.log(newEvenArr);
+    </script>
+</body>
+</html>

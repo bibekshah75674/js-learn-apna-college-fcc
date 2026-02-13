@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // forEach Loop in Arrays
+        // arr.forEach(callBackFunction)
+        // callBackFunction : Here,it is a function to execute for each element in the array
+        // *A callback is a function passed as an argument to another function.
+
+        // arr.forEach((val)=>{
+        // console.log(val);
+        // })
+        
+        let arr = [1,2,3,4,5];
+
+        // arr.forEach(function printValue(val){
+        //     console.log(val);
+        // });
+
+        arr.forEach((val,idx,arr)=>{
+            console.log(val, idx, arr);
+        });
+
+        // Practise Question
+        // Qs1. For a given array of numbers,print the square of each value using the forEach loop.
+
+        let arr_numbers = [3,4,5,6,7,9];
+
+        arr_numbers.forEach((val)=>{
+            console.log(val**2);
+        });
+
+        // we can also do this way
+        let numbers = [2,3,43,5,5];
+
+        let cube_root = (num)=>{
+            console.log(num**3);
+        }
+
+        numbers.forEach(cube_root);
+
+
+    </script>
+</body>
+</html>

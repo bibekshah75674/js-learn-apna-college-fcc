@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      console.log("Hello world");
+      let fruits = ["apple", "mango", "banana"];
+      console.log(fruits);
+      console.log(fruits[0]);
+      console.log(fruits[1]);
+      console.log(fruits[2]);
+
+      console.log(fruits.length); //length of array:3
+
+      // console.log(fruits[3]); //returns undefined
+
+      // updating array at specific index
+      fruits[1] = "strawberry";
+      console.log(fruits); //(3) ['apple', 'strawberry', 'banana']
+
+      // adding new element to an existing array at the index that doesn't yet exits
+      fruits[3] = "Pomogranate";
+      console.log(fruits); //(4) ['apple', 'strawberry', 'banana', 'Pomogranate']
+
+      // There are four main methods for adding and removing elements from the beginning and end of an array: push(), pop(), shift(), and unshift().
+
+      fruits.push("apple");
+      console.log(fruits);
+
+      // The next method we will look at is the pop() method. The pop() method removes the last element from an array and returns that element. It also modifies the original array.
+
+      fruits.pop();
+      console.log(fruits);
+
+      // The unshift() method adds one or more elements to the beginning of an array and returns its new length. It works similarly to push(), but modifies the start of the array instead of the end.
+
+      fruits.unshift("Guava");
+      console.log(fruits);
+
+      // Finally, the shift() method removes the first element from an array and returns that element. It's similar to pop(), but it works at the beginning of the array instead of the end. Here's how it works:
+
+      fruits.shift();
+      console.log(fruits);
+
+      // Note that while push() and unshift() can add multiple elements at once, pop() and shift() remove only one element at a time.
+
+      // One-Dimentional and Two-Dimentional Arrays
+
+      // One-Dimentional Array
+      let subjects = ["Math", "Science", "English"];
+      console.log(subjects[0]);
+
+      // Two-Dimentional Array
+      let chessboard = [
+        ["R", "N", "B", "Q", "K", "B", "N", "R"],
+        ["P", "P", "P", "P", "P", "P", "P", "P"],
+        [" ", " ", " ", " ", " ", " ", " ", " "],
+        [" ", " ", " ", " ", " ", " ", " ", " "],
+        [" ", " ", " ", " ", " ", " ", " ", " "],
+        [" ", " ", " ", " ", " ", " ", " ", " "],
+        ["p", "p", "p", "p", "p", "p", "p", "p"],
+        ["r", "n", "b", "q", "k", "b", "n", "r"],
+      ];
+
+      console.log(chessboard[0][3]); // "Q"
+    </script>
+  </body>
+</html>

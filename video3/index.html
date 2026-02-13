@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Loops in JS
+        // Loops are used to execute a piece of code again & again
+
+        // for loop
+        for(let i=0;i<=5;i++){
+            console.log("hey,I am bibek.");
+        }
+
+        // while loop
+        // while(condition){
+        //     // do some work
+        // }
+
+        let j = 0;
+        while(j<=5){
+            console.log(j);
+            j++;
+        }
+
+        // do-while loop
+        // do{
+        //     // do some work
+        // } while(condition);
+
+        let k = 50;
+        do{
+            console.log(k);
+            k++;
+        } while(k<=60);
+
+        // for-of loop(we use for strings and arrays)
+        // for(let val of strVar){
+        //     // do some work
+        // }
+
+        // for-of loop
+        let str = "Bibek";
+
+        // Also to know the length of the string 
+        let size = 0;
+        for(let val of str){
+            console.log(val);
+            size++;
+        }
+        console.log("The size of the string is",size);
+
+        // for-in loop(for objects (and arrays))
+        // for(let key in objVar){
+        //     // do some work
+        // }
+
+        let student = {
+            name : "Bibek",
+            age : 22,
+            gpa : 2,
+            isPass : false
+        };
+
+        for(let key in student){
+            console.log(key,student[key]);
+        }
+
+        // Practise Questions
+        // Qs1. Print all even numbers from 0 to 100
+        for(let e=0;e<=100;e++){
+            if(e%2 == 0){
+                console.log("even no:",e);
+            }
+        }
+
+        // Qs2.Create a game where you start with any random game number.Ask the user to keep guessing  the game number until the user enters correct value.
+
+        let gameNumber = 22;
+        let userNumber = prompt("Guess the game number:");
+        
+        while(userNumber != gameNumber){
+            userNumber = prompt("You guessed wrong number.Guess Again:");
+        }
+        console.log("Congratulations,you entered the right number.");
+
+        
+    </script>
+</body>
+</html>

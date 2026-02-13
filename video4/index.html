@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Arrays
+        // Collection of items
+        // let heroes = ["ironman","hulk","thor","batman"];
+        // let marks = [96,98,88,33];
+        // let info = ["rahul",86,"Delhi"];
+
+        let marks = [97,98,99,34,35];
+        console.log(marks);
+        console.log(marks.length); 
+        console.log(marks[0]);
+
+        marks[1] = 22;
+        console.log(marks); 
+
+        // Note:String->immutable
+        // Array->mutable
+
+        // looping over an array
+        // Print all elements of an Array
+        console.log("loop");
+        for(let i=0;i<marks.length;i++){
+            console.log(marks[i]);
+        }
+
+        console.log("for of loop");
+        // for of loop
+        for(let el of marks){
+            console.log(el);
+        }
+
+        // Practise Question
+        // Qs1.For a given array with marks of students ->[85,97,44,37,76,60]
+        // Find the average marks of the entire class
+
+        console.log("Question 1");
+        let std_marks = [85,97,44,37,76,60];
+        let sum_marks = 0;
+        // for(let i=0;i <std_marks.length;i++){
+        //     sum_marks += std_marks[i];
+        // }
+        // console.log(sum_marks);
+        // let avg_marks = sum_marks/std_marks.length;
+        // console.log("The average marks of the student is ",avg_marks);
+
+        for(let mark of std_marks){
+            sum_marks += mark;
+        }
+        console.log(sum_marks);
+
+        let avg = sum_marks/std_marks.length;
+        console.log(`The average marks is ${avg}`);
+
+
+        // Question 2
+        console.log("Question 2");
+        // Q2.For a given array with prices of 5 items -> [250,645,300,900,50]
+        // All items have an offer of 10% off on them.Change the array to store final price after applying offer.
+        let items = [250,645,300,900,50];
+        let offer;
+        for(let i=0;i<items.length;i++){
+            items[i] = items[i]-(0.1*items[i]);
+            console.log(`The price of item at index ${i} is `,items[i]);
+        }
+        
+        </script>
+</body>
+</html>

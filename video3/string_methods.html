@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // string methods in js
+        // These are built-in functions to manipulate a string 
+        // str.toUpperCase()
+        // str.toLowerCase()
+        // str.trim()//removes whitespaces from beginning and end
+
+        // Extra
+        // str.trimStart() ->trimStart() removes whitespace from the beginning (or start) of the string.
+        // str.trimEnd() ->trimEnd() removes whitespace from the end of the string.
+
+        let str1 = "bibek";
+        let str2 = "BIBEK";
+        let str3 = "           bib         ek ";
+        console.log(str1.toUpperCase());
+        console.log(str2.toLowerCase());
+        console.log(str3.trim());
+
+        // some other methods
+        // str.slice(start,end?) //returns part of string
+        // str1.concat(str2) //joins str2 with str1
+        // str.replace(searchVal,newVal)
+        // str.charAt(idx)
+         
+        let str4 = "243252542";
+        console.log(str4.slice(1,4));  //index 4 is non inclusive here
+        console.log(str4.slice(4)); 
+
+        // concatination
+        let str5 =  "Apna";
+        let str6 = " college";
+        let res = str5.concat(str6);
+        console.log(res);
+
+        let demo = "Hello";
+        console.log(demo.replace("H","y"));
+        // replaceAll 
+
+        // charAt(idx) method
+        console.log(demo.charAt(0));
+
+        // Practise Questions
+        // Qs1.Prompt the user to enter their full name.Generate a username for them based on the input.Start username with @,followed by their full name and ending with the fullname length.eg.user name = "shradhakhapra",username should be "@shradhakhapra13"
+
+        let userName = prompt("Enter your full name without spaces:");
+        console.log(`Your username is :@${userName}${userName.length}`);
+    </script>
+</body>
+</html>

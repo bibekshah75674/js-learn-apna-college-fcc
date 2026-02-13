@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // string concatination
+        let studentName = "Bibek";
+        let studentAge = 22;
+        let studentInfo = studentName + " is " + studentAge + " years old.";
+        console.log(studentInfo);
+
+        // adding string to existing string 
+        studentInfo += "And he is a handsome man.";
+        console.log(studentInfo);
+
+        // Another way to concatinate string is by using the concat() method
+        let firstName = "Bibek";
+        let lastName = "shah";
+        let fullName = firstName.concat(" ",lastName);
+        console.log(fullName);
+
+        // Accessing string characters
+        let _string = "Bibek";
+        console.log(_string[0]);
+        console.log(_string[1]);
+        console.log(_string[2]);
+        console.log(_string[3]);
+
+        console.log(_string[4]);
+        // or
+        console.log(_string[_string.length - 1]);
+
+        // if you want to get multiple characters
+        console.log(_string[0] + _string[1] + _string[2] + _string[3] + _string[4]);
+
+        // excape sequence \n
+        let poem = "Roses are red,\nViolets are blue\nJavaScript is fun,\nAnd so are you.";
+        console.log(poem);
+
+        // for double quote 
+        // let statement = "she said,"Hello!""; //This will throw an error so we use \"
+        let statement = "she said.\"Hello!\"";
+        console.log(statement);
+
+        // other esq includes for backslash \\ and for single quote \'
+
+        // tempate literal
+        const name = "Bibek";
+        const greeting = `Hello,${name}`;
+        console.log(greeting);
+
+        // Another example
+        const age = 22;
+        console.log(`My name is ${name} and I am ${age}years old.`);
+
+        // Another great feature of template literals is that they support multiline strings .(No need for \n)
+
+        let story = `Roses are red,
+        Violets are blue,
+        JavaScript is fun,
+        And so are you.`;
+        console.log(story);
+
+        // Another feature of template literals is that they allow you to embed JavaScript expressions directly within the string,like in this example
+
+        const song = "Bohemian Rapsody";
+        const score = 9.5;
+        const highestScore = 10;
+
+        const output = `One of my favourite song is "${song}".I rated it ${(score/highestScore)*100}%.`;
+        console.log(output);
+
+        // finding the position of substring using indexOf() method
+        let sentence = "JavaScript is awesome";
+        let position = sentence.indexOf("awesome");
+        console.log(position);
+
+        // if substring is not found it returns -1 showing unsuccessful
+        position = sentence.indexOf("skdjbfs");
+        console.log(position);
+
+        // You can also specify where to begin the search within the string 
+        // for example
+        sentence = "JavaScript is awesome, and JavaScript is powerful!";
+        position = sentence.indexOf("JavaScript", 10);
+        console.log(position); 
+
+        // indexOf() method is case sensitive
+
+        // prompt() method
+        // prompt(message,default);
+
+        // Accessing the ASCII character using charCodeAt() method
+        let letter = "A";
+        console.log(letter.charCodeAt(0));
+
+        let symbol = "!";
+        console.log(symbol.charCodeAt(0));
+
+        // While charCodeAt() helps you retrieve the ASCII value of a character, the fromCharCode() method allows you to do the opposite: convert an ASCII code into its corresponding character.
+
+        let char = String.fromCharCode(65);
+        console.log(char); //A
+
+        // the includes() method
+        let phrase = "JavaScript is awesome!";
+        let result = phrase.includes("awesome");
+        console.log(result);
+        // Note:includes() method is case sensitive
+        console.log(phrase.includes("Awesome")); //return false
+
+
+        console.log(phrase.includes("JavaScript",0)); //search starts from index 0
+
+        // slice(startIndex,endIndex) method
+        // can also use negative numbers .if used it looks from backward
+        let message = "JavaScript is fun!";
+        let lastWord = message.slice(-4);
+        console.log(lastWord);  // fun!
+
+        // The repeat() method is a built-in function in JavaScript that allows you to repeat a string a specified number of times. Here is the basic syntax:
+
+        // string.repeat(count);
+        // let word = "Hello!";
+        // let repeatedWord = word.repeat(3);
+        // console.log(repeatedWord);  // "Hello!Hello!Hello!"
+
+        message.replace()
+    </script>
+</body>
+</html>

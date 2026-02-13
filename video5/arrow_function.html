@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <script>
+        // Arrow Function
+        // Compact way of writing a function
+        // const functionName = (param1,param2..)=>{
+        //     //do some work
+        // }
+
+        // const sum = (a,b)=>{
+        //   return a+b;
+        // }
+
+        // Example (here sum is a variable that acts like function)
+        const sum = (a,b)=>{
+            return a+b;
+        }
+        console.log(sum(1,2));
+
+        // Multiplication function using array function
+        const multiplyarr = (num1,num2) =>{
+            return num1*num2;
+        }
+        const result_of_multiplication = multiplyarr(5,3);
+        console.log(result_of_multiplication);
+
+        // Practise question
+        // Qs1.Create a function using the "function" keyword that takes a String as an argument & returns the number of vowels in the string.
+
+        // let count = 0;
+        // function find_vowels(string){
+        //     for(let i=0;i<string.length;i++){
+        //         if(string.i === ("a" || "e" || "i" || "o" || "u")){
+        //             count++;
+        //         }
+        //     }
+        // }
+        // find_vowels("Bibek");
+        // console.log(count);
+        
+        function countVowels(str){
+            let count = 0;
+            for(const char of str){
+                if(char === "a" || char === "e" || char === "i" || char ==="o" || char === "u"){
+                    count++;
+                }
+            }
+            return count;
+        }
+        console.log(countVowels("Bibek"));
+
+        // Qs2.Create an arrow function to perform the same task.
+        const countVowelsArr = (str) =>{
+            let count = 0;
+            for(const char of str){
+                if(char === "a" || char === "b" || char === "c" || char === "d" || char === "e"){
+                    count++;
+                }
+            }
+            return count;
+        }
+        console.log(countVowelsArr("Bibek"));
+
+
+
+        
+    </script>
+</body>
+</html>

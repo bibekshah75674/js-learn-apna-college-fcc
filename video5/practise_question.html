@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Qs1.We are given array of marks of students.Filter out of the marks of students that scored 90+.
+
+        let stdMarks = [54,66,75,99,98,91,90];
+
+        let marksGreaterThan90 = stdMarks.filter((mark)=>{
+            return mark > 90;
+        });
+
+        console.log(marksGreaterThan90);
+
+        // Qs.Take a number n as input from user.Create an array of numbers from 1 to n.
+        // Use the reduce method to calculate sum of all numbers in the array.
+        // Use the reduce method to calculate product of all numbers in the array.
+
+        let n = prompt("Enter a number:");
+
+        let arr = [];
+        for(let i = 1; i <= n;i++){
+            arr[i-1] = i; 
+        }
+
+        console.log(arr);
+
+        let sum = arr.reduce((prev,curr)=>{
+            return prev+curr;
+        });
+        console.log(sum);
+
+        let product = arr.reduce((prev,curr)=>{
+            return prev*curr;
+        });
+        console.log(product);
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Map method
+        // Creates a new array with the results of some operation.The value its callback returns are used to form new array
+        // arr.map(callbackFnx(value,index,array))
+        // let newArr = arr.map((val)=>{
+        //   return val*2;
+        // })
+
+        let numbers = [45,33,64,67,78];
+
+        let newArr = numbers.map((val)=>{
+            // return val;
+            return val**2;  
+        });
+
+        console.log(newArr);
+    </script>
+</body>
+</html>

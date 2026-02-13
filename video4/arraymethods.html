@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Array methods
+        // push():add to end
+        // pop():delete from end & return
+        // toString():converts array to string
+
+        // concat():joins multiple arrays & return result
+        // unshift():add to start
+        // shift():delete from start & return
+
+        // slice:returns a piece of the array
+        // slice(startIdx,endIdx);
+
+        // Splice:change original array(add,remove,replace)
+        // splice(startIdx,delCount,newEl1...)
+
+        let fruits = ["Apple","Mango","Banana","Guava"];
+
+        fruits.push("Pomogranate","litchi");
+        console.log(fruits);
+
+        fruits.pop();
+        console.log(fruits);
+
+        console.log(fruits.toString());
+
+        let arr1 = ["a","b","c","Bibek"];
+        let arr2 = ["x","y","z"];
+        console.log(arr1.concat(arr2)); 
+
+        // unshift() method
+        arr1.unshift("Hero");
+        console.log(arr1);
+
+        // shift()method
+        arr1.shift("Hero");
+        console.log(arr1);
+
+        // slice:returns a piece of the array
+        // slice(startIdx,endIdx);
+
+        let nam = ["Ram","shyam","Hari","Mohan"];
+        console.log(nam.slice(0,4));
+
+        // Splice:change original array(add,remove,replace)
+        // splice(startIdx,delCount,newEl1...)
+
+        nam.splice(1,1,"Bibek")
+        console.log(nam);
+
+        // Practise Question
+        // Question:Create an array to store companies -> "Bloomberg","Microsoft","Uber","Google","IBM","Netflix"
+        // a.Remove the first company from the array
+        // b.Remove Uber & Add Ola in its place
+        // c.Add Amazon at the end
+
+        let companies = ["Bloomberg","Microsoft","Uber","Google","IBM","Netflix"];
+        console.log(companies);
+
+        companies.shift();
+        console.log(companies);
+
+        companies.splice(1,1,"Ola");
+        console.log(companies);
+
+        companies.push("Amazaon");
+        console.log(companies);
+    </script>
+</body>
+</html>

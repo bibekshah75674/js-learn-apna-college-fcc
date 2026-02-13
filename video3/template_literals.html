@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Template Literals in JS
+        // A way to have embedded expressions in strings
+        // `this is a template literal`
+
+        // String Interpolation
+        // To create strings by doing substitution of placeholders 
+        // `string text ${expression} string text`
+
+        // Template literals
+        let sentence = `This is a template literal`;
+        console.log(sentence);
+        console.log(typeof(sentence));
+
+        // Practical example
+        let obj = {
+            item : "pen",
+            price : 10
+        };
+        console.log("The cost of ",obj.item, "is",obj.price);
+        // or
+        console.log(`The cost of ${obj.item} is ${obj.price}.`);
+
+        // string interpolation
+        let str =  `The sum of 5+6 is ${5+6}`;
+        console.log(str);
+
+        let new_str = "Apna\nCollege";
+        console.log(new_str.length); //12 cause \n is read as one character
+        
+    </script>
+
+</body>
+</html>
